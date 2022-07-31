@@ -1,0 +1,117 @@
+.home-background {
+	background-image: linear-gradient(to top left, #0F1E33, #1E3960);
+	height: 100%;
+	width: 100%;
+}
+
+/* -------- Toolbar -------- */
+
+.home-toolbar {
+	width: 100%;
+	overflow: auto;
+	color: white;
+
+	padding: 15px;
+}
+
+.home-toolbar a {
+	margin-top: 3px;
+	float: left;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.home-toolbar p {
+	float: left;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 28px;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+	.navbar a {
+	    float: none;
+	    display: block;
+	}
+
+	.navbar p {
+		float: none;
+		display: block;
+	}
+}
+
+.home-toolbar-right {
+	float: right;
+}
+
+.contact {
+	border-radius: 5px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 8px;
+}
+
+/* -------- Profile -------- */
+
+.home-profile {
+	display: flex;
+	justify-content: center;
+}
+
+.profile-image {
+
+}
+
+.home-wrapper {
+	
+	padding-top: 5%;
+
+	/* display: flex;
+	justify-content: center; */
+	
+}
+
+/* -------- Profile Typing -------- */
+
+.typer-wrapper {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	/* border-radius: 5px;
+	border-color: white;
+	border-style: solid; */
+}
+
+.typer {
+	width: 415px;
+}
+
+.typer p {
+	
+	color: white;
+	font-size: 22px;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid white; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.1em; /* Adjust as needed */
+	
+	animation: 
+	  typing 6s steps(28, end) infinite,
+	  blink-caret .75s step-end infinite;
+  }
+
+@keyframes typing {
+	0% { width: 0 }
+	50% { width: 100% }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: white; }
+}
