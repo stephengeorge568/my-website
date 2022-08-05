@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToPersonalGithub(): void {
+		window.open("https://github.com/stephengeorge568");	
+	}
+
 }

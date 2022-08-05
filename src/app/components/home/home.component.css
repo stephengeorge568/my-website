@@ -1,6 +1,6 @@
 .home-background {
-	/* background-image: linear-gradient(to top left, #0F1E33, #1E3960); */
-	background-color: #1E3960;
+	/* background-image: linear-gradient(to top left, #001B2E, #052942); */
+	background-color: #12232E;
 	min-height: 100%;
 }
 
@@ -10,7 +10,7 @@
 	overflow: auto;
 	color: white;
 	padding: 15px;
-	background-color: #0F1E33;
+	/* background-color: #001B2E; */
 }
 
 .home-toolbar a {
@@ -19,15 +19,26 @@
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 20px;
 }
 
 .home-toolbar p {
+	color: #1AC8CD;
 	float: left;
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
-	font-size: 28px;
+	font-size: 32px;
+}
+
+.github-icon {
+	transform: scale(0.7);
+	
+	/* margin-bottom: 200px; */
+}
+
+.github-icon:hover {
+	filter: invert(58%) sepia(40%) saturate(756%) hue-rotate(133deg) brightness(101%) contrast(102%);
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
@@ -84,21 +95,22 @@
 	/* border-radius: 5px;
 	border-color: white;
 	border-style: solid; */
+
 }
 
 .typer {
-	width: 305px;
+	width: 395px;
 }
 
 .typer p {	
 	color: white;
-	font-size: 22px;
+	font-size: 28px; /*22*/
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid white; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: 0.05em; /* Adjust as needed */
-	
+	letter-spacing: 0.05em; /* Adjust as needed 05 */
+	height: 25px;
 	animation: 
 	  typing 6s steps(28, end) infinite,
 	  blink-caret .75s step-end infinite;
@@ -134,8 +146,33 @@
 	justify-content: center;
 }
 
+.skill-wrapper {
+	display: flex;
+	justify-content: center;
 
+	margin: 10px;
+	margin-right: 15px;
+	
+}
 
+.skill-text {
+	
+	color: white;
+	font-size: 22px;
+	padding-top: 16px;
+	padding-left: 10px;
+}
+
+.skill-border {
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: white;
+	border-style: solid;
+}
+
+.skill-border:hover {
+	background-color: #1AC8CD;
+}
 
 
 .section-gap {
