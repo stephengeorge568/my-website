@@ -124,10 +124,15 @@
 /* -------- About me -------- */
 
 .about-me {
-	
+	display: flex;
+	justify-content: center;
+	color: white;
+}	
+
+.centered {
+	display: flex;
+	justify-content: center;
 }
-
-
 
 
 
