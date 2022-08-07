@@ -11,8 +11,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }
 #1E3960 lighter
 */
 :root {
+	--main: #0F1E33;
+	--secondary: #3f81de;
+	--pair: #183053;
+	--outline-main: white;
+	--outline-secondary: #1d395f;
+
+	/*
 	--main: #1E3960;
 	--secondary: #0F1E33;
 	--outline-main: white;
 	--outline-secondary: #3360a1;
+	*/
 }

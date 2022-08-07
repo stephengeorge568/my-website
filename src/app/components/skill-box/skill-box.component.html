@@ -1,6 +1,11 @@
 <div class="wrapper">
 	<div class="skill-wrapper">
-		<img class="centered image" src="{{this.skill.fileName}}" alt="Java logo" style="float: left">
-		<p class="centered title">{{this.skill.name}}</p>
+		<img class="centered image" src="{{this.skill.fileName}}" alt="Skill logo">
+		<div class="text">
+			<p class="centered title">{{this.skill.name}}</p>
+			<div>
+				<sub class="description">Projects: <button class="url-button" (click)="goToLink()">{{this.skill.description}}</button></sub>
+			</div>
+		</div>
 	</div>
 </div>

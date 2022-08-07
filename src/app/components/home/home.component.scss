@@ -84,6 +84,8 @@
 	display: flex;
 	justify-content: center;
 	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
 }	
 
 .centered {
@@ -100,8 +102,7 @@
 	
 }
 
-.skill-text {
-	
+.skill-text {	
 	color: white;
 	font-size: 22px;
 	padding-top: 16px;
@@ -109,7 +110,16 @@
 }
 
 .skill-border {
-	
+	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+@media (max-width: 800px) {
+	.skill-border {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 .skills {

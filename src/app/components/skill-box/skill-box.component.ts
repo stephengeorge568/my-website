@@ -4,7 +4,7 @@ import { Skill } from 'src/app/objects/Skill';
 @Component({
   selector: 'app-skill-box',
   templateUrl: './skill-box.component.html',
-  styleUrls: ['./skill-box.component.css']
+  styleUrls: ['./skill-box.component.scss']
 })
 export class SkillBoxComponent implements OnInit {
 
@@ -12,6 +12,10 @@ export class SkillBoxComponent implements OnInit {
 
   constructor() { 
     // console.log(this.skill.name);
+  }
+
+  goToLink(): void {
+    window.open(this.skill.url);
   }
 
   ngOnInit(): void {
