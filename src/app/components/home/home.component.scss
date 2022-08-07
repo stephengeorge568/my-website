@@ -1,68 +1,13 @@
 .home-background {
 	/* background-image: linear-gradient(to top left, #001B2E, #052942); */
-	background-color: #12232E;
+	background-color: var(--main);
 	min-height: 100%;
 }
 
 /* -------- Toolbar -------- */
 
-.home-toolbar {
-	overflow: auto;
-	color: white;
-	padding: 15px;
-	/* background-color: #001B2E; */
-}
-
-.home-toolbar a {
-	margin-top: 3px;
-	float: left;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-.home-toolbar p {
-	color: #1AC8CD;
-	float: left;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 32px;
-}
-
-.github-icon {
-	transform: scale(0.7);
-	
-	/* margin-bottom: 200px; */
-}
-
 .github-icon:hover {
 	filter: invert(58%) sepia(40%) saturate(756%) hue-rotate(133deg) brightness(101%) contrast(102%);
-}
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-	.navbar a {
-	    float: none;
-	    display: block;
-	}
-
-	.navbar p {
-		float: none;
-		display: block;
-	}
-}
-
-.home-toolbar-right {
-	float: right;
-}
-
-.contact {
-	border-radius: 5px;
-	border-color: white;
-	border-style: solid;
-	border-radius: 8px;
 }
 
 /* -------- Profile -------- */
@@ -164,16 +109,12 @@
 }
 
 .skill-border {
-	border-radius: 5px;
-	border-width: 2px;
-	border-color: white;
-	border-style: solid;
+	
 }
 
-.skill-border:hover {
-	background-color: #1AC8CD;
+.skills {
+	padding-bottom: 15px;
 }
-
 
 .section-gap {
 	padding-top: 5%;

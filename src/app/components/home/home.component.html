@@ -1,18 +1,5 @@
 <div class="home-background">
-	<div class="home-toolbar">
-		<div>
-			<p><b>Stephen George</b></p>
-		</div>
-		<div style="float: right">
-			<a>About me</a>
-			<a>Skills</a>
-			<a style="text-decoration: underline;">Project Monaco</a>
-		
-				<img class="github-icon" src="assets/github.svg" alt="Java logo" >
-			
-		</div>
-		
-	</div>
+	<app-toolbar></app-toolbar>
 
 	<div class="home-wrapper">
 		<div class="home-profile">
@@ -20,7 +7,7 @@
 		</div>
 		<div class="typer-wrapper">
 			<div class="typer">
-				<p><b>Hello, my name is </b><b style="color:#1AC8CD">Stephen</b></p>
+				<p><b>Hello, my name is </b><b>Stephen</b></p>
 			</div>
 		</div>
 		<div class="below-typer">
@@ -35,10 +22,14 @@
 	</div>
 	<div class="about-me">
 		<div class="skill-border">
-			<div class="skill-wrapper">
+			<!-- <div class="skill-wrapper">
 				<img class="centered" src="assets/java.svg" alt="Java logo" style="float: left">
 				<p class="centered skill-text" style="float: left">Java</p>
+			</div> -->
+			<div class="skills" *ngFor="let skill of this.skills">
+				<app-skill-box [skill]="skill"></app-skill-box>
 			</div>
+			
 		</div>
 	</div>	
 	

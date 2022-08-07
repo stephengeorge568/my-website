@@ -1,7 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }
+
 * {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*
+#0F1E33 darker
+#1E3960 lighter
+*/
+:root {
+	--main: #1E3960;
+	--secondary: #0F1E33;
+	--outline-main: white;
+	--outline-secondary: #3360a1;
 }

@@ -12,15 +12,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer){
-		this.matIconRegistry
-			.addSvgIcon(
-				`github`,
-				this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/github.svg")
-			).addSvgIcon(
-				`yacht`,
-				this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/yacht.svg")
-			);
+  	constructor(){
 	}
   
 	ngOnInit(): void {
