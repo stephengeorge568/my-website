@@ -17,20 +17,10 @@
 
 	<div class="section-gap"></div>
 	
-	<div>		
+	<div class="centered">		
 		<h1>About me</h1>
 	</div>
-	<div class="about-me">
-		<div class="skill-border">
-			<!-- <div class="skill-wrapper">
-				<img class="centered" src="assets/java.svg" alt="Java logo" style="float: left">
-				<p class="centered skill-text" style="float: left">Java</p>
-			</div> -->
-			<div class="skills" *ngFor="let skill of this.skills">
-				<app-skill-box [skill]="skill"></app-skill-box>
-			</div>
-			
-		</div>
-	</div>	
+		
+	<app-skills class="centered"></app-skills>
 	
 </div>

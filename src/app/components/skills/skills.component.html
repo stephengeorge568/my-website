@@ -1,0 +1,19 @@
+
+
+<div class="test">
+	<div class="skills-title">
+		<h1>SKILLS</h1>
+	</div>
+	
+	<div class="skills-description">
+		<p>The tools and technologies I enjoy</p>
+	</div>
+
+	<div class="about-me">		
+		<div class="skill-border">
+			<div class="skills" *ngFor="let skill of this.skills">
+				<app-skill-box [skill]="skill"></app-skill-box>
+			</div>		
+		</div>
+	</div>
+</div>

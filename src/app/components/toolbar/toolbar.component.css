@@ -19,8 +19,8 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--secondary);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px 0 10px 0px var(--secondary);
+	background-color: var(--outline-secondary);
   color: #FFF;
   height: 75px;
   padding: 1em;
