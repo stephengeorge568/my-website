@@ -17,6 +17,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillBoxComponent } from './components/skill-box/skill-box.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 const monacoConfig: NgxMonacoEditorConfig = {
   baseUrl: 'OT-editor/assets', // configure base path cotaining monaco-editor directory after build default: './assets'
@@ -31,7 +32,8 @@ const monacoConfig: NgxMonacoEditorConfig = {
     MonacoComponent,
     ToolbarComponent,
     HomeComponent,
-    SkillBoxComponent
+    SkillBoxComponent,
+    SkillsComponent
   ],
   imports: [
     MatIconModule,
