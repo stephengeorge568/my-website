@@ -36,10 +36,6 @@
 	padding-bottom: 15px;
 }
 
-.section-gap {
-	padding-top: 5%;
-}
-
 .centered {
 	display: flex;
 	justify-content: center;
@@ -47,14 +43,27 @@
 
 .skills-title {
 	color: white;
+	font-family: var(--font);
+	// Idk why this is needed. but it is.
+	// Somewhere, somehow, margin is set to something big.
+	margin-bottom: 5px; 
 }
 
 .skills-description {
+	font-family: var(--font);
 	color: white;
+	// Idk why this is needed. but it is.
+	// Somewhere, somehow, margin is set to something big.
+	margin-bottom: 5px;
 }
 
 .test {
-	// border-width: 5px;
-	// border-color: white;
-	// border-style: dashed;
+	border-width: 5px;
+	border-color: white;
+	border-style: dashed;
+	
+}
+
+* {
+	
 }
